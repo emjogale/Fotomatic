@@ -1,7 +1,5 @@
 /* Universal Styles */
-div {
-  border: 1px solid black;
-}
+
 html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -279,27 +277,43 @@ header .mobile {
 }
 
 @media only screen and (max-width: 890px) {
+  .feature {
+    width: 100%;
+
+  }
+
+  .feature .content  {
+    height : auto;
+  }
   .feature h2 {
-    font-size: 1.125rem;
+    font-size: 18px;
     line-height: 1.3;
     font-weight: normal;
   }
 
   .feature h3 {
-    font-size: .875rem;
+    font-size: 14px;
     line-height: 1.4;
+    padding-bottom: 30px;
   }
 }
 
 @media only screen and (max-width: 760px) {
   #features-section {
     flex-flow: column;
+    align-items: center;
     padding: 0;
+    height: 50%;
+    width: 100%;
   }
 
   .feature {
     margin: 0;
     padding: 1.25rem 1rem 0 1rem;
+  }
+
+  .feature h2{
+    font-size: 18px;
   }
 }
 
@@ -343,6 +357,7 @@ header .mobile {
 @media only screen and (max-width: 760px) {
   #filters-section {
     padding: 1.5rem 0 0 0;
+    flex-direction: column;
   }
 
   #filters-section .content {
@@ -399,19 +414,30 @@ header .mobile {
 }
 
 @media only screen and (max-width: 760px) {
+#quotes-section {
+  padding: 10px;
+}
+
+
   #quotes-section content {
-    padding: 1.875rem .625rem;
+    /*padding: 1.875rem .625rem;*/
+    text-align: center;
   }
 
-  #quotes-section quote {
-    font-size: 1.5rem;
+  #quotes-section .quote {
+    font-size: 20px;
     line-height: 1.4;
   }
 
-  #quotes-section quote-citation {
+  #quotes-section .quote-citation {
     display: block;
-    padding-top: 1rem;
+    padding: 10px;
     margin: auto;
+  }
+
+  #quotes-section img {
+    display: block;
+    margin: 0 auto;
   }
 }
 
@@ -426,7 +452,7 @@ footer .content {
   color: white;
   display: flex;
   font-size: 12px;
-  font-family: "Roboto"
+  font-family: "Roboto";
 }
 
 footer .copyright {
@@ -435,6 +461,6 @@ footer .copyright {
 
 @media only screen and (min-width: 760px) {
   footer .content {
-    font-size: .625rem;
+    font-size: 10px;
   }
 }
